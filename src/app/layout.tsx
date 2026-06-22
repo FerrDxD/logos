@@ -3,7 +3,6 @@ import { Inter, Orbitron, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import TopStatusStrip from "@/components/hud/TopStatusStrip";
 import SideIconRail from "@/components/hud/SideIconRail";
-import BottomBar from "@/components/hud/BottomBar";
 import { HudProvider } from "@/components/hud/HudProvider";
 import QuickCaptureModal from "@/components/hud/QuickCaptureModal";
 import { getEntries } from "@/app/actions";
