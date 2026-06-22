@@ -107,7 +107,7 @@ const modelCategories = [
 
 export default function ModelsPage() {
   return (
-    <div className="absolute inset-0 pt-24 pb-24 pl-24 md:pl-32 pr-8 overflow-y-auto z-50">
+    <div className="absolute inset-0 pt-20 md:pt-24 pb-24 px-6 md:pl-32 md:pr-8 overflow-y-auto z-50">
       <div className="max-w-6xl mx-auto w-full animate-in fade-in slide-in-from-bottom-4 duration-500 pb-12">
         <HudBackButton label="RETURN TO BRIDGE" />
         

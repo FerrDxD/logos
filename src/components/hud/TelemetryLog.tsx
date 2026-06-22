@@ -9,7 +9,7 @@ export default function TelemetryLog({ entries }: { entries: Entry[] }) {
   const recentEntries = entries.slice(0, 8).reverse();
 
   return (
-    <div className="absolute left-6 md:left-24 bottom-6 md:bottom-24 w-64 md:w-80 z-30 pointer-events-none">
+    <div className="hidden md:block absolute left-24 bottom-24 w-80 z-30 pointer-events-none">
       <div className="flex items-center gap-2 mb-4 opacity-70">
         <div className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse"></div>
         <span className="font-mono text-[8px] text-accent tracking-widest uppercase">Live Telemetry Feed</span>

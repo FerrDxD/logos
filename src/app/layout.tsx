@@ -33,13 +33,12 @@ export default async function RootLayout({
         <div className="relative w-full h-full p-4 md:p-6 flex flex-col">
           <HudProvider>
             {/* Subtle vignette / edge shadow */}
-            <div className="pointer-events-none fixed inset-0 shadow-[inset_0_0_150px_rgba(7,11,20,0.9)] z-50"></div>
+            <div className="pointer-events-none fixed inset-0 shadow-[inset_0_0_100px_rgba(7,11,20,0.5)] z-50"></div>
             
             <TopStatusStrip totalEntries={totalEntries} totalOutputs={totalOutputs} activeModels={uniqueModels} />
             <SideIconRail />
-            <BottomBar />
 
-            <main className="flex-1 relative z-10 w-full h-full flex flex-col">
+            <main className="flex-1 relative z-10 w-full h-full flex flex-col pt-12 md:pt-0">
               {children}
             </main>
             

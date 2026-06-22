@@ -9,7 +9,7 @@ const actions = [
 
 export default function ActionPanel() {
   return (
-    <div className="absolute right-6 md:right-12 top-1/2 -translate-y-1/2 flex flex-col gap-4 w-64 md:w-72 z-40">
+    <div className="absolute left-1/2 md:left-auto right-auto md:right-12 bottom-20 md:bottom-auto top-auto md:top-1/2 -translate-x-1/2 md:translate-x-0 md:-translate-y-1/2 flex flex-col gap-3 md:gap-4 w-[90%] md:w-72 z-40">
       
       <div className="flex items-center gap-2 mb-2">
         <div className="w-2 h-2 bg-accent clip-chamfer"></div>

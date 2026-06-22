@@ -15,8 +15,8 @@ export default async function EntryDetailPage({ params }: { params: { id: string
   }
 
   return (
-    <div className="absolute inset-0 pt-24 pb-24 pl-24 md:pl-32 pr-8 overflow-y-auto z-50">
-      <div className="max-w-4xl mx-auto w-full animate-in fade-in slide-in-from-bottom-4 duration-500 pb-12">
+    <div className="absolute inset-0 pt-20 md:pt-24 pb-24 px-6 md:pl-32 md:pr-8 overflow-y-auto z-50">
+      <div className="max-w-4xl mx-auto w-full animate-in fade-in zoom-in-95 duration-500 pb-12">
         
         <div className="flex items-center justify-between mb-8">
           <HudBackButton />

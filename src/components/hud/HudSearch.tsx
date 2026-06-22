@@ -17,11 +17,11 @@ export default function HudSearch() {
   };
 
   return (
-    <div className="absolute left-1/2 bottom-32 -translate-x-1/2 w-full max-w-md z-40">
-      <form onSubmit={handleSearch} className={`relative flex items-center bg-surface/80 backdrop-blur-md border clip-chamfer transition-all duration-300 ${
-        focused ? 'border-accent hud-glow-active' : 'border-border'
+    <div className="absolute left-1/2 top-28 md:top-auto md:bottom-24 -translate-x-1/2 w-[90%] md:max-w-md z-40">
+      <form onSubmit={handleSearch} className={`relative flex items-center bg-surface/90 backdrop-blur-xl border rounded-full transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.5)] ${
+        focused ? 'border-accent hud-glow-active' : 'border-accent/30'
       }`}>
-        <button type="submit" className="pl-4 cursor-pointer hover:text-accent transition-colors">
+        <button type="submit" className="pl-6 cursor-pointer hover:text-accent transition-colors">
           <Search size={18} className={focused ? 'text-accent' : 'text-muted-foreground'} />
         </button>
         <input 
@@ -33,17 +33,10 @@ export default function HudSearch() {
           onBlur={() => setFocused(false)}
           className="w-full bg-transparent border-none text-foreground font-mono text-sm tracking-widest placeholder:text-muted-foreground/50 px-4 py-3 focus:outline-none focus:ring-0"
         />
-        <div className={`px-4 border-l ${focused ? 'border-accent/50 text-accent' : 'border-border text-muted-foreground'}`}>
+        <div className={`px-6 border-l ${focused ? 'border-accent/50 text-accent' : 'border-accent/30 text-muted-foreground'}`}>
           <ChevronRight size={20} />
         </div>
       </form>
-      
-      {/* Decorative scanning line under search */}
-      <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-3/4 flex items-center opacity-50">
-        <div className="flex-1 h-[1px] bg-gradient-to-r from-transparent to-accent/80"></div>
-        <div className="w-2 h-2 bg-accent clip-chamfer mx-1"></div>
-        <div className="flex-1 h-[1px] bg-gradient-to-l from-transparent to-accent/80"></div>
-      </div>
     </div>
   );
 }

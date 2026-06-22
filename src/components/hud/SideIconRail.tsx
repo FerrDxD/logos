@@ -10,15 +10,14 @@ const navItems = [
 
 export default function SideIconRail() {
   return (
-    <div className="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-40">
-      <div className="w-px h-16 bg-gradient-to-b from-transparent to-accent/50 mx-auto mb-2"></div>
+    <div className="fixed md:absolute bottom-6 md:bottom-auto left-1/2 md:left-6 md:top-1/2 -translate-x-1/2 md:-translate-x-0 md:-translate-y-1/2 w-[90%] md:w-auto flex flex-row md:flex-col justify-around md:justify-center md:gap-6 z-50 bg-surface/80 backdrop-blur-xl border border-accent/30 rounded-2xl md:rounded-[2rem] px-4 py-3 md:px-3 md:py-6 shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
       
       {navItems.map((item) => {
         const Icon = item.icon;
         return (
           <Link href={item.href} key={item.id} className="group relative flex flex-col items-center">
             {/* Hexagon Frame */}
-            <div className={`relative w-14 h-14 md:w-16 md:h-16 flex items-center justify-center clip-hexagon transition-all duration-300 ${
+            <div className={`relative w-12 h-12 md:w-16 md:h-16 flex items-center justify-center clip-hexagon transition-all duration-300 ${
               item.active 
                 ? 'bg-accent/10 hud-border hud-glow-active' 
                 : 'bg-surface border border-border hover:bg-accent/5 hover:border-accent/50'
@@ -35,7 +34,7 @@ export default function SideIconRail() {
             </div>
             
             {/* Label */}
-            <span className={`mt-2 font-mono text-[9px] md:text-[10px] tracking-widest ${
+            <span className={`hidden md:block mt-2 font-mono text-[9px] md:text-[10px] tracking-widest ${
               item.active ? 'text-accent' : 'text-muted-foreground'
             }`}>
               {item.label}
@@ -43,13 +42,15 @@ export default function SideIconRail() {
             
             {/* Active Side Line */}
             {item.active && (
-              <div className="absolute -left-6 top-1/2 -translate-y-1/2 w-1 h-8 bg-accent rounded-r-md hud-glow-active"></div>
+              <div className="hidden md:block absolute -left-6 top-1/2 -translate-y-1/2 w-1 h-8 bg-accent rounded-r-md hud-glow-active"></div>
+            )}
+            {/* Active Bottom Line (Mobile) */}
+            {item.active && (
+              <div className="block md:hidden absolute -bottom-4 left-1/2 -translate-x-1/2 w-6 h-1 bg-accent rounded-t-md hud-glow-active"></div>
             )}
           </Link>
         );
       })}
-
-      <div className="w-px h-16 bg-gradient-to-t from-transparent to-accent/50 mx-auto mt-2"></div>
     </div>
   );
 }
