@@ -26,7 +26,7 @@ export default function TopStatusStrip({ totalEntries = 0, totalOutputs = 0, act
   );
 }
 
-function StatusCounter({ icon: Icon, label, value }: { icon: any, label: string, value: number }) {
+function StatusCounter({ icon: Icon, label, value }: { icon: React.ElementType, label: string, value: number }) {
   return (
     <div className="flex items-center gap-3 group">
       <div className="w-8 h-8 rounded-full border border-accent/50 flex items-center justify-center bg-surface group-hover:hud-glow transition-all duration-300">

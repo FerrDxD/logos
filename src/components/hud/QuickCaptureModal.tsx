@@ -9,7 +9,7 @@ export default function QuickCaptureModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -82,7 +82,7 @@ export default function QuickCaptureModal() {
           <div className="p-6 flex items-start gap-4">
             <span className="font-mono text-accent mt-1">{'>'}</span>
             <textarea
-              ref={inputRef as any}
+              ref={inputRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => {

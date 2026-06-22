@@ -1,5 +1,5 @@
 import HudBackButton from "@/components/hud/HudBackButton";
-import { Cpu, PenTool, Search, Image as ImageIcon, Code, Sparkles, Video, Bot, Box } from "lucide-react";
+import { PenTool, Search, Image as ImageIcon, Code, Sparkles, Video, Bot, Box } from "lucide-react";
 
 export const metadata = {
   title: "MODELS // LOGOS",
