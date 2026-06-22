@@ -20,7 +20,7 @@ The following is a set of guidelines for contributing to LOGOS and its packages.
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [LOGOS Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to `opensource@example.com`.
+This project and everyone participating in it is governed by the [LOGOS Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to `ferdi@nawasena.site`.
 
 ---
 

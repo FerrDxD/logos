@@ -18,7 +18,7 @@ Security is a critical priority for our engineering team. We deeply appreciate t
 If you discover a potential security vulnerability in LOGOS, please adhere to the following protocol:
 
 1. **Do not disclose the vulnerability publicly.** This includes filing a public GitHub issue, posting on forums, or sharing on social media. Public disclosure before a fix is ready places our users at risk.
-2. **Report via Email:** Send your findings directly to our security operations team at `security@example.com`. 
+2. **Report via Email:** Send your findings directly to our security operations team at `ferdi@nawasena.site`. 
 3. **Include Detailed Information:**
    - A summary of the vulnerability.
    - Step-by-step instructions to reproduce the issue.
